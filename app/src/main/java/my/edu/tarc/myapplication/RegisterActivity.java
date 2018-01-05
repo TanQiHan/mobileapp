@@ -8,13 +8,19 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText editTextUsername;
+    EditText editTextUsername,editTextPassword,editTextConfirmPassword,editTextFullName,editTextPhoneNumber,editTextEmailAddress;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+
         editTextUsername=(EditText)findViewById(R.id.editTextUsername);
+        editTextPassword=(EditText)findViewById(R.id.editTextPassword);
+        editTextConfirmPassword=(EditText)findViewById(R.id.editTextConfirmPassword);
+        editTextFullName=(EditText)findViewById(R.id.editTextFullName);
+        editTextPhoneNumber=(EditText)findViewById(R.id.editTextPhoneNumber);
+        editTextEmailAddress=(EditText)findViewById(R.id.editTextEmailAddress);
         editTextUsername.requestFocus();
         Button nextButton=(Button)findViewById(R.id.buttonNext);
         nextButton.setOnClickListener(new View.OnClickListener() {
